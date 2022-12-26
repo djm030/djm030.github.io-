@@ -1,0 +1,53 @@
+.movie_list {
+  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(2, 35%);
+  row-gap: 5rem;
+  column-gap: 5rem;
+  margin-top: 5%;
+
+  justify-content: space-evenly;
+}
+
+.container {
+  background-color: antiquewhite;
+  display: flex;
+  flex: 1 1 50%;
+}
+
+.cover_image > img {
+  width: 8vw;
+  height: auto;
+  transform: translate(-2vw, -2vw);
+}
+
+.movie_info {
+  justify-content: flex-end;
+}
+
+.star_rating {
+  color: #aaa9a9;
+  position: relative;
+  unicode-bidi: bidi-override;
+  width: max-content;
+  -webkit-text-fill-color: transparent; /* Will override color (regardless of order) */
+  -webkit-text-stroke-width: 1.3px;
+  -webkit-text-stroke-color: #2b2a29;
+}
+
+.star_ratings_fill {
+  color: #fff58c;
+  padding: 0;
+  position: absolute;
+  z-index: 1;
+  display: flex;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  -webkit-text-fill-color: gold;
+}
+
+.star_ratings_base {
+  z-index: 0;
+  padding: 0;
+}

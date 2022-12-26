@@ -1,0 +1,25 @@
+.Img {
+  height: 300px;
+  width: 200px;
+}
+
+.booklist {
+  width: 90vw;
+  max-width: 1170px;
+  padding: 10px;
+  display: grid;
+  gap: 5px;
+  background-color: #f1f5f8;
+}
+
+.book {
+  background-color: white;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+@media screen and (min-width: 768px) {
+  .booklist {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
